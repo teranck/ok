@@ -1,13 +1,13 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: womo
+  name: reco
   annotations:
     dev.okteto.com/auto-ingress: "true"
 spec:
   type: ClusterIP  
   ports:
-  - name: "womo"
+  - name: "reco"
     port: 8080
   selector:
-    app: womo
+    app: reco
