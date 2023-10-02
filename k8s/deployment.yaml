@@ -1,20 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: reco
+  name: caul
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: reco
+      app: caul
   template:
     metadata:
       labels:
-        app: reco
+        app: caul
     spec:
       containers:
-      - image: okteto.dev/reco:latest
-        name: reco
+      - image: okteto.dev/caul:latest
+        name: caul
         ports:
         - containerPort: 8080
         env:
