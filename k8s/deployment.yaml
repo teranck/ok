@@ -1,20 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: dnla
+  name: pran
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: dnla
+      app: pran
   template:
     metadata:
       labels:
-        app: dnla
+        app: pran
     spec:
       containers:
-      - image: okteto.dev/dnla:latest
-        name: dnla
+      - image: okteto.dev/pran:latest
+        name: pran
         ports:
         - containerPort: 8080
         env:
