@@ -1,3 +1,3 @@
 deploy:
-  - okteto build -t okteto.dev/womo:latest
+  - okteto build -t okteto.dev/reco:latest
   - kubectl apply -f k8s
