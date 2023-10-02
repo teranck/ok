@@ -1,20 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: womo
+  name: reco
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: womo
+      app: reco
   template:
     metadata:
       labels:
-        app: womo
+        app: reco
     spec:
       containers:
-      - image: okteto.dev/womo:latest
-        name: womo
+      - image: okteto.dev/reco:latest
+        name: reco
         ports:
         - containerPort: 8080
         env:
